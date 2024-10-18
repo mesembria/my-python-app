@@ -1,2 +1,2 @@
 Flask
-python-oauth2
+requests==2.19.0

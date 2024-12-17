@@ -1,16 +1,21 @@
-name: TruffleHog OSS
-
 on:
-  schedule:
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
-  trufflehog:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: TruffleHog OSS
-        uses: trufflesecurity/trufflehog@v3.86.1
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Secret Scanning
+      uses: trufflesecurity/trufflehog@v3.76.1
+      with:
+        extra_args: --results=verified,unknown
+          
             
           

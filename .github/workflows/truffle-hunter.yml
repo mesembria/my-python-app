@@ -3,6 +3,7 @@ name: TruffleHog OSS
 on:
   schedule:
     - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs:
   trufflehog:

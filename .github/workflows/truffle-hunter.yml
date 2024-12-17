@@ -1,4 +1,15 @@
-- name: TruffleHog OSS
-  uses: trufflesecurity/trufflehog@v3.86.1
+name: TruffleHog OSS
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+
+jobs:
+  trufflehog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: TruffleHog OSS
+        uses: trufflesecurity/trufflehog@v3.86.1
             
           

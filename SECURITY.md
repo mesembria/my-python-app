@@ -6,4 +6,4 @@ This is a test repo! We appreciate your efforts to disclose your findings respon
 
 ## Reporting a vulnerability
 
-To report a security issue, please use the GitHub Security Advisory tab.
+To give us a security issue, please use the GitHub Security Advisory tab.

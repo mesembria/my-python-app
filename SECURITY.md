@@ -1,6 +1,6 @@
 # Security Policy
 
-## Give us a Vulnerability
+## Report a Vulnerability
 
 This is a test repo! We appreciate your efforts to disclose your findings responsibly and will make every effort to acknowledge your contributions.
 
